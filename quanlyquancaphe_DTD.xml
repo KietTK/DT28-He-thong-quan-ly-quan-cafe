@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE quanlyquancaphe SYSTEM "quanlyquancaphe.dtd">
 <quanlyquancaphe>
     <khachhang>
         <khachhang_id>KH01</khachhang_id>

@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           targetNamespace="http://www.example.org/quanlyquancaphe"
-           xmlns="http://www.example.org/quanlyquancaphe"
-           elementFormDefault="qualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
     <!-- Kiểu cho số điện thoại: 0 + 9 chữ số -->
     <xs:simpleType name="phoneType">
