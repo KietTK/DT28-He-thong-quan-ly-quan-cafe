@@ -1,0 +1,50 @@
+<!-- quanlyquancaphe.dtd -->
+<!ELEMENT quanlyquancaphe (khachhang*, nhanvien*, calamviec*, phancong*, sanpham*, donhang*, chitietdonhang*, hoadon*)>
+
+<!-- Khách hàng -->
+<!ELEMENT khachhang (khachhang_id, hoten, sodienthoai, diachi)>
+<!ELEMENT khachhang_id (#PCDATA)>
+<!ELEMENT hoten (#PCDATA)>
+<!ELEMENT sodienthoai (#PCDATA)>
+<!ELEMENT diachi (#PCDATA)>
+
+<!-- Nhân viên -->
+<!ELEMENT nhanvien (nhanvien_id, hoten, chucvu, luong)>
+<!ELEMENT nhanvien_id (#PCDATA)>
+<!ELEMENT chucvu (#PCDATA)>
+<!ELEMENT luong (#PCDATA)>
+
+<!-- Ca làm việc -->
+<!ELEMENT calamviec (ca_id, tenca, thoigianbatdau, thoigianketthuc)>
+<!ELEMENT ca_id (#PCDATA)>
+<!ELEMENT tenca (#PCDATA)>
+<!ELEMENT thoigianbatdau (#PCDATA)>
+<!ELEMENT thoigianketthuc (#PCDATA)>
+
+<!-- Phân công -->
+<!ELEMENT phancong (nhanvien_id, ca_id, ngaylam)>
+<!ELEMENT ngaylam (#PCDATA)>
+
+<!-- Sản phẩm -->
+<!ELEMENT sanpham (sanpham_id, tensanpham, loaisanpham, mota, gia)>
+<!ELEMENT sanpham_id (#PCDATA)>
+<!ELEMENT tensanpham (#PCDATA)>
+<!ELEMENT loaisanpham (#PCDATA)>
+<!ELEMENT mota (#PCDATA)>
+<!ELEMENT gia (#PCDATA)>
+
+<!-- Đơn hàng -->
+<!ELEMENT donhang (donhang_id, khachhang_id, nhanvien_id, ngaydat, tongtien)>
+<!ELEMENT donhang_id (#PCDATA)>
+<!ELEMENT ngaydat (#PCDATA)>
+<!ELEMENT tongtien (#PCDATA)>
+
+<!-- Chi tiết đơn hàng -->
+<!ELEMENT chitietdonhang (donhang_id, sanpham_id, soluong)>
+<!ELEMENT soluong (#PCDATA)>
+
+<!-- Hóa đơn -->
+<!ELEMENT hoadon (hoadon_id, donhang_id, ngaylaphoadon, phuongthucthanhtoan)>
+<!ELEMENT hoadon_id (#PCDATA)>
+<!ELEMENT ngaylaphoadon (#PCDATA)>
+<!ELEMENT phuongthucthanhtoan (#PCDATA)>
