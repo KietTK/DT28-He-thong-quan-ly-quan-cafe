@@ -2,23 +2,20 @@
 
 <!-- Khách hàng -->
 <!ELEMENT khachhang (hoten, sodienthoai, diachi)>
-<!ATTLIST khachhang khachhang_id ID #REQUIRED
->
+<!ATTLIST khachhang khachhang_id ID #REQUIRED>
 <!ELEMENT hoten (#PCDATA)>
 <!ELEMENT sodienthoai (#PCDATA)>
 <!ELEMENT diachi (#PCDATA)>
 
 <!-- Nhân viên -->
 <!ELEMENT nhanvien (hoten, chucvu, luong)>
-<!ATTLIST nhanvien nhanvien_id ID #REQUIRED
->
+<!ATTLIST nhanvien nhanvien_id ID #REQUIRED>
 <!ELEMENT chucvu (#PCDATA)>
 <!ELEMENT luong (#PCDATA)>
 
 <!-- Ca làm việc -->
 <!ELEMENT calamviec (tenca, thoigianbatdau, thoigianketthuc)>
-<!ATTLIST calamviec ca_id ID #REQUIRED
->
+<!ATTLIST calamviec ca_id ID #REQUIRED>
 <!ELEMENT tenca (#PCDATA)>
 <!ELEMENT thoigianbatdau (#PCDATA)>
 <!ELEMENT thoigianketthuc (#PCDATA)>
@@ -33,8 +30,7 @@
 
 <!-- Sản phẩm -->
 <!ELEMENT sanpham (tensanpham, loaisanpham, mota, gia)>
-<!ATTLIST sanpham sanpham_id ID #REQUIRED
->
+<!ATTLIST sanpham sanpham_id ID #REQUIRED>
 <!ELEMENT tensanpham (#PCDATA)>
 <!ELEMENT loaisanpham (#PCDATA)>
 <!ELEMENT mota (#PCDATA)>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-    <!-- Kiểu cho số điện thoại: 0 + 9 chữ số -->
+    <!-- Kiểu cho số điện thoại -->
     <xs:simpleType name="phoneType">
         <xs:restriction base="xs:string">
             <xs:pattern value="0[0-9]{9}" />

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE quanlyquancaphe SYSTEM "quanlyquancaphe.dtd">
 <quanlyquancaphe>
-
     <!-- Khách hàng -->
     <khachhang khachhang_id="KH01">
         <hoten>Nguyễn Văn An</hoten>
@@ -169,5 +168,4 @@
         <ngaylaphoadon>2025-09-11</ngaylaphoadon>
         <phuongthucthanhtoan>Chuyển khoản</phuongthucthanhtoan>
     </hoadon>
-
 </quanlyquancaphe>
