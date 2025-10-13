@@ -1,161 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE quanlyquancaphe SYSTEM "quanlyquancaphe.dtd">
 <quanlyquancaphe>
-    <khachhang>
-        <khachhang_id>KH01</khachhang_id>
+
+    <!-- Khách hàng -->
+    <khachhang khachhang_id="KH01">
         <hoten>Nguyễn Văn An</hoten>
         <sodienthoai>0912345678</sodienthoai>
         <diachi>Hà Nội</diachi>
     </khachhang>
-    <khachhang>
-        <khachhang_id>KH02</khachhang_id>
+    <khachhang khachhang_id="KH02">
         <hoten>Trần Thị Mai</hoten>
         <sodienthoai>0987654321</sodienthoai>
         <diachi>Đà Nẵng</diachi>
     </khachhang>
-    <khachhang>
-        <khachhang_id>KH03</khachhang_id>
+    <khachhang khachhang_id="KH03">
         <hoten>Lê Hoàng Nam</hoten>
         <sodienthoai>0909123456</sodienthoai>
         <diachi>Hồ Chí Minh</diachi>
     </khachhang>
-    <khachhang>
-        <khachhang_id>KH04</khachhang_id>
+    <khachhang khachhang_id="KH04">
         <hoten>Phạm Thùy Dung</hoten>
         <sodienthoai>0934567890</sodienthoai>
         <diachi>Cần Thơ</diachi>
     </khachhang>
-    <khachhang>
-        <khachhang_id>KH05</khachhang_id>
+    <khachhang khachhang_id="KH05">
         <hoten>Đỗ Văn Hùng</hoten>
         <sodienthoai>0978123456</sodienthoai>
         <diachi>Huế</diachi>
     </khachhang>
-    <khachhang>
-        <khachhang_id>KH06</khachhang_id>
+    <khachhang khachhang_id="KH06">
         <hoten>Ngô Thanh Hà</hoten>
         <sodienthoai>0923456789</sodienthoai>
         <diachi>Bình Dương</diachi>
     </khachhang>
-    <khachhang>
-        <khachhang_id>KH07</khachhang_id>
+    <khachhang khachhang_id="KH07">
         <hoten>Vũ Minh Quân</hoten>
         <sodienthoai>0945678901</sodienthoai>
         <diachi>Hải Phòng</diachi>
     </khachhang>
 
-    <!-- Nhân viên (7 mẫu) -->
-    <nhanvien>
-        <nhanvien_id>NV01</nhanvien_id>
+    <!-- Nhân viên -->
+    <nhanvien nhanvien_id="NV01">
         <hoten>Nguyễn Văn Tuấn</hoten>
         <chucvu>Phục vụ</chucvu>
         <luong>7000000</luong>
     </nhanvien>
-    <nhanvien>
-        <nhanvien_id>NV02</nhanvien_id>
+    <nhanvien nhanvien_id="NV02">
         <hoten>Trần Thị Hồng</hoten>
         <chucvu>Thu ngân</chucvu>
         <luong>8000000</luong>
     </nhanvien>
-    <nhanvien>
-        <nhanvien_id>NV03</nhanvien_id>
+    <nhanvien nhanvien_id="NV03">
         <hoten>Lê Minh Đức</hoten>
         <chucvu>Pha chế</chucvu>
         <luong>10000000</luong>
     </nhanvien>
-    <nhanvien>
-        <nhanvien_id>NV04</nhanvien_id>
+    <nhanvien nhanvien_id="NV04">
         <hoten>Phạm Thị Lan</hoten>
         <chucvu>Phụ bếp</chucvu>
         <luong>6000000</luong>
     </nhanvien>
-    <nhanvien>
-        <nhanvien_id>NV05</nhanvien_id>
+    <nhanvien nhanvien_id="NV05">
         <hoten>Đỗ Hoàng Long</hoten>
         <chucvu>Quản lý</chucvu>
         <luong>15000000</luong>
     </nhanvien>
-    <nhanvien>
-        <nhanvien_id>NV06</nhanvien_id>
+    <nhanvien nhanvien_id="NV06">
         <hoten>Ngô Thị Yến</hoten>
         <chucvu>Tiếp tân</chucvu>
         <luong>6500000</luong>
     </nhanvien>
-    <nhanvien>
-        <nhanvien_id>NV07</nhanvien_id>
+    <nhanvien nhanvien_id="NV07">
         <hoten>Vũ Quang Huy</hoten>
         <chucvu>Bảo vệ</chucvu>
         <luong>5000000</luong>
     </nhanvien>
 
     <!-- Ca làm việc -->
-    <calamviec>
-        <ca_id>CA01</ca_id>
+    <calamviec ca_id="CA01">
         <tenca>Sáng</tenca>
         <thoigianbatdau>07:00</thoigianbatdau>
         <thoigianketthuc>11:00</thoigianketthuc>
     </calamviec>
-    <calamviec>
-        <ca_id>CA02</ca_id>
+    <calamviec ca_id="CA02">
         <tenca>Chiều</tenca>
         <thoigianbatdau>13:00</thoigianbatdau>
         <thoigianketthuc>17:00</thoigianketthuc>
     </calamviec>
-    <calamviec>
-        <ca_id>CA03</ca_id>
+    <calamviec ca_id="CA03">
         <tenca>Tối</tenca>
         <thoigianbatdau>18:00</thoigianbatdau>
         <thoigianketthuc>23:00</thoigianketthuc>
     </calamviec>
 
     <!-- Phân công -->
-    <phancong>
-        <nhanvien_id>NV01</nhanvien_id>
-        <ca_id>CA01</ca_id>
+    <phancong nhanvien_id="NV01" ca_id="CA01">
         <ngaylam>2025-09-01</ngaylam>
     </phancong>
-    <phancong>
-        <nhanvien_id>NV03</nhanvien_id>
-        <ca_id>CA02</ca_id>
+    <phancong nhanvien_id="NV03" ca_id="CA02">
         <ngaylam>2025-09-01</ngaylam>
     </phancong>
-    <phancong>
-        <nhanvien_id>NV02</nhanvien_id>
-        <ca_id>CA03</ca_id>
+    <phancong nhanvien_id="NV02" ca_id="CA03">
         <ngaylam>2025-09-02</ngaylam>
     </phancong>
 
-    <!-- Sản phẩm (đồ uống + bánh ngọt) -->
-    <sanpham>
-        <sanpham_id>SP01</sanpham_id>
+    <!-- Sản phẩm -->
+    <sanpham sanpham_id="SP01">
         <tensanpham>Cà phê đen</tensanpham>
         <loaisanpham>Đồ uống</loaisanpham>
         <mota>Cà phê đen đá</mota>
         <gia>25000</gia>
     </sanpham>
-    <sanpham>
-        <sanpham_id>SP02</sanpham_id>
+    <sanpham sanpham_id="SP02">
         <tensanpham>Latte</tensanpham>
         <loaisanpham>Đồ uống</loaisanpham>
         <mota>Latte nóng</mota>
         <gia>40000</gia>
     </sanpham>
-    <sanpham>
-        <sanpham_id>SP03</sanpham_id>
+    <sanpham sanpham_id="SP03">
         <tensanpham>Cappuccino</tensanpham>
         <loaisanpham>Đồ uống</loaisanpham>
         <mota>Cappuccino sữa</mota>
         <gia>45000</gia>
     </sanpham>
-    <sanpham>
-        <sanpham_id>SP04</sanpham_id>
+    <sanpham sanpham_id="SP04">
         <tensanpham>Trà sữa</tensanpham>
         <loaisanpham>Đồ uống</loaisanpham>
         <mota>Trà sữa trân châu</mota>
         <gia>35000</gia>
     </sanpham>
-    <sanpham>
-        <sanpham_id>SP05</sanpham_id>
+    <sanpham sanpham_id="SP05">
         <tensanpham>Bánh tiramisu</tensanpham>
         <loaisanpham>Bánh ngọt</loaisanpham>
         <mota>Bánh tiramisu cacao</mota>
@@ -163,53 +137,35 @@
     </sanpham>
 
     <!-- Đơn hàng -->
-    <donhang>
-        <donhang_id>DH01</donhang_id>
-        <khachhang_id>KH01</khachhang_id>
-        <nhanvien_id>NV01</nhanvien_id>
+    <donhang donhang_id="DH01" khachhang_id="KH01" nhanvien_id="NV01">
         <ngaydat>2025-09-10</ngaydat>
         <tongtien>65000</tongtien>
     </donhang>
-    <donhang>
-        <donhang_id>DH02</donhang_id>
-        <khachhang_id>KH03</khachhang_id>
-        <nhanvien_id>NV02</nhanvien_id>
+    <donhang donhang_id="DH02" khachhang_id="KH03" nhanvien_id="NV02">
         <ngaydat>2025-09-11</ngaydat>
         <tongtien>75000</tongtien>
     </donhang>
 
     <!-- Chi tiết đơn hàng -->
-    <chitietdonhang>
-        <donhang_id>DH01</donhang_id>
-        <sanpham_id>SP01</sanpham_id>
+    <chitietdonhang donhang_id="DH01" sanpham_id="SP01">
         <soluong>1</soluong>
     </chitietdonhang>
-    <chitietdonhang>
-        <donhang_id>DH01</donhang_id>
-        <sanpham_id>SP05</sanpham_id>
+    <chitietdonhang donhang_id="DH01" sanpham_id="SP05">
         <soluong>1</soluong>
     </chitietdonhang>
-    <chitietdonhang>
-        <donhang_id>DH02</donhang_id>
-        <sanpham_id>SP02</sanpham_id>
+    <chitietdonhang donhang_id="DH02" sanpham_id="SP02">
         <soluong>1</soluong>
     </chitietdonhang>
-    <chitietdonhang>
-        <donhang_id>DH02</donhang_id>
-        <sanpham_id>SP04</sanpham_id>
+    <chitietdonhang donhang_id="DH02" sanpham_id="SP04">
         <soluong>1</soluong>
     </chitietdonhang>
 
     <!-- Hóa đơn -->
-    <hoadon>
-        <hoadon_id>HD01</hoadon_id>
-        <donhang_id>DH01</donhang_id>
+    <hoadon hoadon_id="HD01" donhang_id="DH01">
         <ngaylaphoadon>2025-09-10</ngaylaphoadon>
         <phuongthucthanhtoan>Tiền mặt</phuongthucthanhtoan>
     </hoadon>
-    <hoadon>
-        <hoadon_id>HD02</hoadon_id>
-        <donhang_id>DH02</donhang_id>
+    <hoadon hoadon_id="HD02" donhang_id="DH02">
         <ngaylaphoadon>2025-09-11</ngaylaphoadon>
         <phuongthucthanhtoan>Chuyển khoản</phuongthucthanhtoan>
     </hoadon>

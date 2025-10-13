@@ -4,7 +4,7 @@
     <!-- Kiểu cho số điện thoại: 0 + 9 chữ số -->
     <xs:simpleType name="phoneType">
         <xs:restriction base="xs:string">
-            <xs:pattern value="0[0-9]{9}"/>
+            <xs:pattern value="0[0-9]{9}" />
         </xs:restriction>
     </xs:simpleType>
 
@@ -12,15 +12,16 @@
     <xs:element name="quanlyquancaphe">
         <xs:complexType>
             <xs:sequence>
+
                 <!-- Khách hàng -->
                 <xs:element name="khachhang" maxOccurs="unbounded" minOccurs="0">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="khachhang_id" type="xs:string"/>
-                            <xs:element name="hoten" type="xs:string"/>
-                            <xs:element name="sodienthoai" type="phoneType"/>
-                            <xs:element name="diachi" type="xs:string"/>
+                            <xs:element name="hoten" type="xs:string" />
+                            <xs:element name="sodienthoai" type="phoneType" />
+                            <xs:element name="diachi" type="xs:string" />
                         </xs:sequence>
+                        <xs:attribute name="khachhang_id" type="xs:ID" use="required" />
                     </xs:complexType>
                 </xs:element>
 
@@ -28,11 +29,11 @@
                 <xs:element name="nhanvien" maxOccurs="unbounded" minOccurs="0">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="nhanvien_id" type="xs:string"/>
-                            <xs:element name="hoten" type="xs:string"/>
-                            <xs:element name="chucvu" type="xs:string"/>
-                            <xs:element name="luong" type="xs:decimal"/>
+                            <xs:element name="hoten" type="xs:string" />
+                            <xs:element name="chucvu" type="xs:string" />
+                            <xs:element name="luong" type="xs:decimal" />
                         </xs:sequence>
+                        <xs:attribute name="nhanvien_id" type="xs:ID" use="required" />
                     </xs:complexType>
                 </xs:element>
 
@@ -40,11 +41,11 @@
                 <xs:element name="calamviec" maxOccurs="unbounded" minOccurs="0">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="ca_id" type="xs:string"/>
-                            <xs:element name="tenca" type="xs:string"/>
-                            <xs:element name="thoigianbatdau" type="xs:string"/>
-                            <xs:element name="thoigianketthuc" type="xs:string"/>
+                            <xs:element name="tenca" type="xs:string" />
+                            <xs:element name="thoigianbatdau" type="xs:string" />
+                            <xs:element name="thoigianketthuc" type="xs:string" />
                         </xs:sequence>
+                        <xs:attribute name="ca_id" type="xs:ID" use="required" />
                     </xs:complexType>
                 </xs:element>
 
@@ -52,10 +53,10 @@
                 <xs:element name="phancong" maxOccurs="unbounded" minOccurs="0">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="nhanvien_id" type="xs:string"/>
-                            <xs:element name="ca_id" type="xs:string"/>
-                            <xs:element name="ngaylam" type="xs:date"/>
+                            <xs:element name="ngaylam" type="xs:date" />
                         </xs:sequence>
+                        <xs:attribute name="nhanvien_id" type="xs:IDREF" use="required" />
+                        <xs:attribute name="ca_id" type="xs:IDREF" use="required" />
                     </xs:complexType>
                 </xs:element>
 
@@ -63,12 +64,12 @@
                 <xs:element name="sanpham" maxOccurs="unbounded" minOccurs="0">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="sanpham_id" type="xs:string"/>
-                            <xs:element name="tensanpham" type="xs:string"/>
-                            <xs:element name="loaisanpham" type="xs:string"/>
-                            <xs:element name="mota" type="xs:string"/>
-                            <xs:element name="gia" type="xs:decimal"/>
+                            <xs:element name="tensanpham" type="xs:string" />
+                            <xs:element name="loaisanpham" type="xs:string" />
+                            <xs:element name="mota" type="xs:string" />
+                            <xs:element name="gia" type="xs:decimal" />
                         </xs:sequence>
+                        <xs:attribute name="sanpham_id" type="xs:ID" use="required" />
                     </xs:complexType>
                 </xs:element>
 
@@ -76,12 +77,12 @@
                 <xs:element name="donhang" maxOccurs="unbounded" minOccurs="0">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="donhang_id" type="xs:string"/>
-                            <xs:element name="khachhang_id" type="xs:string"/>
-                            <xs:element name="nhanvien_id" type="xs:string"/>
-                            <xs:element name="ngaydat" type="xs:date"/>
-                            <xs:element name="tongtien" type="xs:decimal"/>
+                            <xs:element name="ngaydat" type="xs:date" />
+                            <xs:element name="tongtien" type="xs:decimal" />
                         </xs:sequence>
+                        <xs:attribute name="donhang_id" type="xs:ID" use="required" />
+                        <xs:attribute name="khachhang_id" type="xs:IDREF" use="required" />
+                        <xs:attribute name="nhanvien_id" type="xs:IDREF" use="required" />
                     </xs:complexType>
                 </xs:element>
 
@@ -89,10 +90,10 @@
                 <xs:element name="chitietdonhang" maxOccurs="unbounded" minOccurs="0">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="donhang_id" type="xs:string"/>
-                            <xs:element name="sanpham_id" type="xs:string"/>
-                            <xs:element name="soluong" type="xs:integer"/>
+                            <xs:element name="soluong" type="xs:integer" />
                         </xs:sequence>
+                        <xs:attribute name="donhang_id" type="xs:IDREF" use="required" />
+                        <xs:attribute name="sanpham_id" type="xs:IDREF" use="required" />
                     </xs:complexType>
                 </xs:element>
 
@@ -100,83 +101,16 @@
                 <xs:element name="hoadon" maxOccurs="unbounded" minOccurs="0">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="hoadon_id" type="xs:string"/>
-                            <xs:element name="donhang_id" type="xs:string"/>
-                            <xs:element name="ngaylaphoadon" type="xs:date"/>
-                            <xs:element name="phuongthucthanhtoan" type="xs:string"/>
+                            <xs:element name="ngaylaphoadon" type="xs:date" />
+                            <xs:element name="phuongthucthanhtoan" type="xs:string" />
                         </xs:sequence>
+                        <xs:attribute name="hoadon_id" type="xs:ID" use="required" />
+                        <xs:attribute name="donhang_id" type="xs:IDREF" use="required" />
                     </xs:complexType>
                 </xs:element>
 
             </xs:sequence>
         </xs:complexType>
-
-        <!-- Khóa chính -->
-        <xs:key name="khKey">
-            <xs:selector xpath="khachhang"/>
-            <xs:field xpath="khachhang_id"/>
-        </xs:key>
-
-        <xs:key name="nvKey">
-            <xs:selector xpath="nhanvien"/>
-            <xs:field xpath="nhanvien_id"/>
-        </xs:key>
-
-        <xs:key name="caKey">
-            <xs:selector xpath="calamviec"/>
-            <xs:field xpath="ca_id"/>
-        </xs:key>
-
-        <xs:key name="spKey">
-            <xs:selector xpath="sanpham"/>
-            <xs:field xpath="sanpham_id"/>
-        </xs:key>
-
-        <xs:key name="dhKey">
-            <xs:selector xpath="donhang"/>
-            <xs:field xpath="donhang_id"/>
-        </xs:key>
-
-        <xs:key name="hdKey">
-            <xs:selector xpath="hoadon"/>
-            <xs:field xpath="hoadon_id"/>
-        </xs:key>
-
-        <!-- Khóa ngoại -->
-        <xs:keyref name="dhToKH" refer="khKey">
-            <xs:selector xpath="donhang"/>
-            <xs:field xpath="khachhang_id"/>
-        </xs:keyref>
-
-        <xs:keyref name="dhToNV" refer="nvKey">
-            <xs:selector xpath="donhang"/>
-            <xs:field xpath="nhanvien_id"/>
-        </xs:keyref>
-
-        <xs:keyref name="ctToDH" refer="dhKey">
-            <xs:selector xpath="chitietdonhang"/>
-            <xs:field xpath="donhang_id"/>
-        </xs:keyref>
-
-        <xs:keyref name="ctToSP" refer="spKey">
-            <xs:selector xpath="chitietdonhang"/>
-            <xs:field xpath="sanpham_id"/>
-        </xs:keyref>
-
-        <xs:keyref name="hdToDH" refer="dhKey">
-            <xs:selector xpath="hoadon"/>
-            <xs:field xpath="donhang_id"/>
-        </xs:keyref>
-
-        <xs:keyref name="pcToNV" refer="nvKey">
-            <xs:selector xpath="phancong"/>
-            <xs:field xpath="nhanvien_id"/>
-        </xs:keyref>
-
-        <xs:keyref name="pcToCA" refer="caKey">
-            <xs:selector xpath="phancong"/>
-            <xs:field xpath="ca_id"/>
-        </xs:keyref>
-
     </xs:element>
+
 </xs:schema>
