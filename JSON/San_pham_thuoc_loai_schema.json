@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Sản phẩm Đồ uống",
+  "type": "object",
+  "properties": {
+    "sanpham_douong": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sanpham_id": { "type": "string" },
+          "tensanpham": { "type": "string" },
+          "loaisanpham": { "type": "string", "enum": ["Đồ uống"] },
+          "gia": { "type": "number" }
+        },
+        "required": ["sanpham_id", "tensanpham", "loaisanpham"]
+      }
+    }
+  },
+  "required": ["sanpham_douong"]
+}

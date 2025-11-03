@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Sản phẩm có giá trên 30.000đ",
+  "type": "object",
+  "properties": {
+    "sanpham_giatren30000": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sanpham_id": { "type": "string" },
+          "tensanpham": { "type": "string" },
+          "gia": { "type": "number", "minimum": 30001 }
+        },
+        "required": ["sanpham_id", "tensanpham", "gia"]
+      }
+    }
+  },
+  "required": ["sanpham_giatren30000"]
+}

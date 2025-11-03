@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Nhân viên có lương cao nhất",
+  "type": "object",
+  "properties": {
+    "nhanvien_luongcao": {
+      "type": "object",
+      "properties": {
+        "nhanvien_id": { "type": "string" },
+        "hoten": { "type": "string" },
+        "chucvu": { "type": "string" },
+        "luong": { "type": "number" }
+      },
+      "required": ["nhanvien_id", "hoten", "luong"]
+    }
+  },
+  "required": ["nhanvien_luongcao"]
+}

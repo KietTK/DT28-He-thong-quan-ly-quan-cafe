@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Nhân viên Phục vụ",
+  "type": "object",
+  "properties": {
+    "nhanvien_phucvu": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "nhanvien_id": { "type": "string" },
+          "hoten": { "type": "string" },
+          "chucvu": { "type": "string", "enum": ["Phục vụ"] },
+          "luong": { "type": "number" }
+        },
+        "required": ["nhanvien_id", "hoten", "chucvu"]
+      }
+    }
+  },
+  "required": ["nhanvien_phucvu"]
+}

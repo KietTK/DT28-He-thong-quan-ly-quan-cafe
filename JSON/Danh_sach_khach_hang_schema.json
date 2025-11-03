@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Danh sách khách hàng",
+  "type": "object",
+  "properties": {
+    "khachhang": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "khachhang_id": { "type": "string" },
+          "hoten": { "type": "string" },
+          "diachi": { "type": "string" },
+          "sdt": { "type": "string" }
+        },
+        "required": ["khachhang_id", "hoten"]
+      }
+    }
+  },
+  "required": ["khachhang"]
+}

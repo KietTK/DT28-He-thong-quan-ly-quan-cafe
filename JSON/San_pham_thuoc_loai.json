@@ -1,0 +1,16 @@
+{
+  "sanpham_douong": [
+    {
+      "sanpham_id": "SP01",
+      "tensanpham": "Cà phê sữa đá",
+      "loaisanpham": "Đồ uống",
+      "gia": 25000
+    },
+    {
+      "sanpham_id": "SP02",
+      "tensanpham": "Trà đào cam sả",
+      "loaisanpham": "Đồ uống",
+      "gia": 35000
+    }
+  ]
+}

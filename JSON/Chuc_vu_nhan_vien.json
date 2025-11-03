@@ -1,0 +1,16 @@
+{
+  "nhanvien_phucvu": [
+    {
+      "nhanvien_id": "NV01",
+      "hoten": "Lê Văn C",
+      "chucvu": "Phục vụ",
+      "luong": 5000000
+    },
+    {
+      "nhanvien_id": "NV03",
+      "hoten": "Phan Thị D",
+      "chucvu": "Phục vụ",
+      "luong": 4800000
+    }
+  ]
+}
