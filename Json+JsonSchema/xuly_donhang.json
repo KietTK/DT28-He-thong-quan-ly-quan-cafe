@@ -1,0 +1,26 @@
+{
+  "donhang": [
+    {
+      "donhang_id": "DH01",
+      "khachhang_id": "KH01",
+      "nhanvien_id": "NV01",
+      "ngaydat": "2025-09-10",
+      "tongtien": 55000,
+      "chitietdonhang": [
+        { "sanpham_id": "SP01", "soluong": 1 },
+        { "sanpham_id": "SP05", "soluong": 1 }
+      ]
+    },
+    {
+      "donhang_id": "DH02",
+      "khachhang_id": "KH03",
+      "nhanvien_id": "NV02",
+      "ngaydat": "2025-09-11",
+      "tongtien": 75000,
+      "chitietdonhang": [
+        { "sanpham_id": "SP02", "soluong": 1 },
+        { "sanpham_id": "SP04", "soluong": 1 }
+      ]
+    }
+  ]
+}

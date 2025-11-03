@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "QuanLySanPham",
+  "type": "object",
+  "properties": {
+    "sanpham": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sanpham_id": { "type": "string", "maxLength": 10 },
+          "tensanpham": { "type": "string" },
+          "loaisanpham": { "type": "string", "enum": ["Đồ uống", "Bánh ngọt"] },
+          "gia": { "type": "number", "minimum": 1000 },
+          "mota": { "type": "string" }
+        },
+        "required": ["sanpham_id", "tensanpham", "loaisanpham", "gia"]
+      }
+    }
+  },
+  "required": ["sanpham"]
+}

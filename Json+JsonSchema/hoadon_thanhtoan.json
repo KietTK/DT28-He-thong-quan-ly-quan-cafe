@@ -1,0 +1,16 @@
+{
+  "hoadon": [
+    {
+      "hoadon_id": "HD01",
+      "donhang_id": "DH01",
+      "ngaylap": "2025-09-10",
+      "phuongthucthanhtoan": "Tiền mặt"
+    },
+    {
+      "hoadon_id": "HD02",
+      "donhang_id": "DH02",
+      "ngaylap": "2025-09-11",
+      "phuongthucthanhtoan": "Chuyển khoản"
+    }
+  ]
+}

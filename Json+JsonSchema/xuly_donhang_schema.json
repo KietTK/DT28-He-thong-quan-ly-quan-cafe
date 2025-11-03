@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "XuLyDonHang",
+  "type": "object",
+  "properties": {
+    "donhang": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "donhang_id": { "type": "string", "maxLength": 10 },
+          "khachhang_id": { "type": "string", "maxLength": 10 },
+          "nhanvien_id": { "type": "string", "maxLength": 10 },
+          "ngaydat": {
+            "type": "string",
+            "format": "date",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+          },
+          "tongtien": { "type": "number", "minimum": 1000 },
+          "chitietdonhang": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "sanpham_id": { "type": "string", "maxLength": 10 },
+                "soluong": { "type": "integer", "minimum": 1 }
+              },
+              "required": ["sanpham_id", "soluong"]
+            }
+          }
+        },
+        "required": [
+          "donhang_id",
+          "khachhang_id",
+          "nhanvien_id",
+          "ngaydat",
+          "tongtien"
+        ]
+      }
+    }
+  },
+  "required": ["donhang"]
+}

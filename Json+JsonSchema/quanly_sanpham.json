@@ -1,0 +1,18 @@
+{
+  "sanpham": [
+    {
+      "sanpham_id": "SP01",
+      "tensanpham": "Cà phê đen",
+      "loaisanpham": "Đồ uống",
+      "gia": 25000,
+      "mota": "Cà phê đen đá"
+    },
+    {
+      "sanpham_id": "SP05",
+      "tensanpham": "Bánh tiramisu",
+      "loaisanpham": "Bánh ngọt",
+      "gia": 30000,
+      "mota": "Bánh tiramisu cacao"
+    }
+  ]
+}

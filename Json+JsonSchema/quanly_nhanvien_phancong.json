@@ -1,0 +1,37 @@
+{
+  "nhanvien": [
+    {
+      "nhanvien_id": "NV01",
+      "hoten": "Nguyễn Văn Tuấn",
+      "chucvu": "Phục vụ",
+      "luong": 7000000,
+      "phancong": [
+        { "ca_id": "CA01", "ngaylam": "2025-09-01" },
+        { "ca_id": "CA03", "ngaylam": "2025-09-02" }
+      ]
+    },
+    {
+      "nhanvien_id": "NV03",
+      "hoten": "Lê Minh Đức",
+      "chucvu": "Pha chế",
+      "luong": 10000000,
+      "phancong": [
+        { "ca_id": "CA02", "ngaylam": "2025-09-03" }
+      ]
+    }
+  ],
+  "calamviec": [
+    {
+      "ca_id": "CA01",
+      "tenca": "Sáng",
+      "thoigianbatdau": "07:00:00",
+      "thoigianketthuc": "11:00:00"
+    },
+    {
+      "ca_id": "CA02",
+      "tenca": "Chiều",
+      "thoigianbatdau": "13:00:00",
+      "thoigianketthuc": "17:00:00"
+    }
+  ]
+}

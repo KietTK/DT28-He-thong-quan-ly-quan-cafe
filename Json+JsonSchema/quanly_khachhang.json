@@ -1,0 +1,16 @@
+{
+  "khachhang": [
+    {
+      "khachhang_id": "KH01",
+      "hoten": "Nguyễn Văn An",
+      "sodienthoai": "0912345678",
+      "diachi": "Hà Nội"
+    },
+    {
+      "khachhang_id": "KH02",
+      "hoten": "Trần Thị Mai",
+      "sodienthoai": "0987654321",
+      "diachi": "Đà Nẵng"
+    }
+  ]
+}
