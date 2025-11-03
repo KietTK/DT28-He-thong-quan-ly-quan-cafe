@@ -2,15 +2,15 @@
   "sanpham_douong": [
     {
       "sanpham_id": "SP01",
-      "tensanpham": "Cà phê sữa đá",
+      "tensanpham": "Cà phê đen đá",
       "loaisanpham": "Đồ uống",
       "gia": 25000
     },
     {
       "sanpham_id": "SP02",
-      "tensanpham": "Trà đào cam sả",
+      "tensanpham": "Latte nóng",
       "loaisanpham": "Đồ uống",
-      "gia": 35000
+      "gia": 40000
     }
   ]
 }

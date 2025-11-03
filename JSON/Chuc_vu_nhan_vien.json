@@ -2,15 +2,15 @@
   "nhanvien_phucvu": [
     {
       "nhanvien_id": "NV01",
-      "hoten": "Lê Văn C",
+      "hoten": "Nguyễn Văn Tuấn",
       "chucvu": "Phục vụ",
-      "luong": 5000000
+      "luong": 7000000
     },
     {
       "nhanvien_id": "NV03",
-      "hoten": "Phan Thị D",
+      "hoten": "Lê Minh Đức",
       "chucvu": "Phục vụ",
-      "luong": 4800000
+      "luong": 10000000
     }
   ]
 }

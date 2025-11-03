@@ -2,15 +2,15 @@
   "khachhang": [
     {
       "khachhang_id": "KH01",
-      "hoten": "Nguyễn Văn A",
-      "diachi": "Đà Nẵng",
-      "sdt": "0905123456"
+      "hoten": "Nguyễn Văn An",
+      "diachi": "Hà Nội",
+      "sdt": "0912345678"
     },
     {
       "khachhang_id": "KH02",
-      "hoten": "Trần Thị B",
-      "diachi": "Hà Nội",
-      "sdt": "0987123456"
+      "hoten": "Trần Thị Mai",
+      "diachi": "Đà Nẵng",
+      "sdt": "0987654321"
     }
   ]
 }
