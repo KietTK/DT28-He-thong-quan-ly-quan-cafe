@@ -32,6 +32,12 @@
       "tenca": "Chiều",
       "thoigianbatdau": "13:00:00",
       "thoigianketthuc": "17:00:00"
+    },
+    {
+      "ca_id":"CA03",
+      "tenca":"Tối",
+      "thoigianbatdau":"18:00:00",
+      "thoigianketthuc":"23:00:00"
     }
   ]
 }
